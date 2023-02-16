@@ -3,10 +3,10 @@
 #import modules
 import os, csv
 
-csvpath = os.path.join("..","Resources","budget_data.csv")
+csvpath = os.path.join("..","python-challenge","budget_data.csv")
 
 with open(csvpath) as csvfile:
-    csvreader = csv.reader(csvfile, delimitier = "-")
+    csvreader = csv.reader(csvfile, delimiter = ",")
     print(csvreader)
 
 # total number of months in the dataset
