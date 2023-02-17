@@ -3,11 +3,20 @@
 #import modules
 import os, csv
 
-csvpath = os.path.join("..","python-challenge","budget_data.csv")
+csvpath = os.path.join("..", "Resources", "budget_data.csv")
 
+#open and read csv file
 with open(csvpath) as csvfile:
     csvreader = csv.reader(csvfile, delimiter = ",")
-    print(csvreader)
+
+#skip header
+csvheader = next(csvfile)
+dates = csvfile[0]
+profits = csvfile[1]
+
+total_months = len(dates[0])
+
+
 
 # total number of months in the dataset
 # net total amount of profit/losses
