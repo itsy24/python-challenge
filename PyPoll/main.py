@@ -9,6 +9,7 @@ csvpath = os.path.join("C:\\Users\\itsy7\\OneDrive\\Documents\\GitHub\\python-ch
 total_votes = 0
 candidate_list = []
 votes= 0
+votes2 = 0
 
 
 with open(csvpath) as csvfile:
@@ -22,8 +23,11 @@ with open(csvpath) as csvfile:
             candidate_list += [i[2]]
         if i[2] == candidate_list[0]:
             votes += 1
-    print(candidate_list)
-    print(votes)
+        if i[2] == candidate_list[0]:
+            votes += 1
+      
+print(candidate_list)
+print(votes)
     
 
 # total number of months in the dataset

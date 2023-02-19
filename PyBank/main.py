@@ -53,7 +53,7 @@ Greatest Increase in Profits: {greatest_inc_list[0]}  (${greatest_inc_list[1]})
 Greatest Increase in Profits: {greatest_dec_list[0]}  (${greatest_dec_list[1]})""")
 
 #export text file
-with open("C:\\Users\\itsy7\\OneDrive\\Documents\\GitHub\\python-challenge\\PyBank\\Analysis.csv","w", newline="") as csvfile:
+with open("C:\\Users\\itsy7\\OneDrive\\Documents\\GitHub\\python-challenge\\PyBank\\Analysis\\Analysis.csv","w", newline="") as csvfile:
     csvfile.write(f"""
 Financial Analysis
 ----------------------------
