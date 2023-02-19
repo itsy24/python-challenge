@@ -17,6 +17,7 @@ with open(csvpath) as csvfile:
     csvheader = next(csvreader) 
     budgetdata = list(csvreader)
     previous_net = int(budgetdata[0][1])
+    
 # net total amount of profit/losses
     for i in budgetdata:
         dates += 1

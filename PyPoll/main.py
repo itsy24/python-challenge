@@ -6,31 +6,35 @@ import os, csv
 csvpath = os.path.join("C:\\Users\\itsy7\\OneDrive\\Documents\\GitHub\\python-challenge\\PyPoll\\Resources\\election_data.csv")
 
 #Create Variables
-total_votes = 0
+total_votes = 0         
 candidate_list = []
-votercount1= 0
+votercount1= 0      
 votercount2 = 0
 votercount3 = 0
 winner = 0
 
-
+#election data opened 
 with open(csvpath) as csvfile:
     csvreader = csv.reader(csvfile, delimiter = ",")
     csvheader = next(csvreader) 
     election_data = list(csvreader)
 
-#total votes casted / candidate names
+#total votes 
     for i in election_data:
         total_votes += 1
+#candidate names
         candidate_name = i[2]
         if i[2] not in candidate_list:
             candidate_list += [i[2]]
 
-# total votes/candidate
+
+
     for i in election_data:
-        voter1 = candidate_list[0]
+#voter variable = candidate name
+        voter1 = candidate_list[0]              
         voter2 = candidate_list[1]
         voter3 = candidate_list[2]
+#total votes per candidate
         if i[2] == voter1:
             votercount1 += 1
         if i[2] == voter2:
@@ -38,7 +42,7 @@ with open(csvpath) as csvfile:
         if i[2] == voter3:
             votercount3 += 1       
 
-# % votes/candidate
+# % votes per candidate
     percent1 = (votercount1/total_votes) * 100
     percent1 = round(percent1,3)
 
