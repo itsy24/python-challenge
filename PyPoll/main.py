@@ -74,7 +74,7 @@ Total Votes: {total_votes}
 Winner: {winner}
 -----------------------""")
 #export text file
-with open("C:\\Users\\itsy7\\OneDrive\\Documents\\GitHub\\python-challenge\\PyPoll\\Analysis\\Analysis.csv","w", newline="") as csvfile:
+with open("C:\\Users\\itsy7\\OneDrive\\Documents\\GitHub\\python-challenge\\PyPoll\\Analysis\\Analysis.txt","w", newline="") as csvfile:
     csvfile.write(f""" 
 Election Results
 -----------------------
