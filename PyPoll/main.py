@@ -3,7 +3,7 @@
 #import modules
 import os, csv
 
-csvpath = os.path.join("C:\\Users\\itsy7\\OneDrive\\Documents\\GitHub\\python-challenge\\PyPoll\\Resources\\election_data.csv")
+csvpath = os.path.join("..","Resources", "election_data.csv")
 
 #Create Variables
 total_votes = 0         
@@ -74,7 +74,7 @@ Total Votes: {total_votes}
 Winner: {winner}
 -----------------------""")
 #export text file
-with open("C:\\Users\\itsy7\\OneDrive\\Documents\\GitHub\\python-challenge\\PyPoll\\Analysis\\Analysis.txt","w", newline="") as csvfile:
+with open("..","Analysis","Analysis.txt","w", newline="") as csvfile:
     csvfile.write(f""" 
 Election Results
 -----------------------

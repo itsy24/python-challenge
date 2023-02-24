@@ -2,7 +2,7 @@
 
 #import modules
 import os, csv
-csvpath = os.path.join("C:\\Users\\itsy7\\OneDrive\\Documents\\GitHub\\python-challenge\\PyBank\\Resources\\budget_data.csv")
+csvpath = os.path.join("..","Resources", "budget_data.csv")
 
 #Create variables for things we need
 dates = 0
@@ -54,7 +54,7 @@ Greatest Increase in Profits: {greatest_inc_list[0]}  (${greatest_inc_list[1]})
 Greatest Decrease in Profits: {greatest_dec_list[0]}  (${greatest_dec_list[1]})""")
 
 #export text file
-with open("C:\\Users\\itsy7\\OneDrive\\Documents\\GitHub\\python-challenge\\PyBank\\Analysis\\Analysis.txt","w", newline="") as csvfile:
+with open("..", "Analysis", "Analysis.txt","w", newline="") as csvfile:
     csvfile.write(f"""
 Financial Analysis
 ----------------------------
